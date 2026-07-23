@@ -1,0 +1,11 @@
+{
+  "name": "nexusflow",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev -w backend & npm run dev -w frontend",
+    "build": "npm run build -w backend && npm run build -w frontend"
+  },
+  "workspaces": ["backend", "frontend"]
+}
